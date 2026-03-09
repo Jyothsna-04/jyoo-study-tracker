@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, useMemo, useCallback } from "react";
 import { createClient } from "@supabase/supabase-js";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from "recharts";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const SUPABASE_URL = "https://gzhijhgdwwngdotsndbw.supabase.co";
 const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imd6aGlqaGdkd3duZ2RvdHNuZGJ3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI5MzUzNTUsImV4cCI6MjA4ODUxMTM1NX0.DDuzmydQKC1L1INbkL-BJ1gQft8nET6p7q9drI-o_9Y";
@@ -1506,6 +1507,7 @@ export default function App(){
           </button>
         ))}
       </div>
+      <SpeedInsights />
     </div>
   );
 }
