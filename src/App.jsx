@@ -1895,6 +1895,11 @@ export default function App(){
           <div className="mono" style={{fontSize:"11px",color:T.dim}}>{new Date().toLocaleDateString("en-IN",{day:"numeric",month:"short"})}</div>
         </div>
         <div className="quote-strip">"{quote}"</div>
+          <div style={{
+            height:"1px",
+            background:"#a855f7",
+            width:"100%"
+          }}/>
         <NotifBanner T={T}/>
       </div>
 
